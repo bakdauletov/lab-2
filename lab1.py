@@ -49,52 +49,48 @@
 #     print(f"The digit in the units position is {units}")
 # else:
 #     print("Please enter a valid four-digit number.")
-#task 2.3
-people = int(input("The population number: "))
-if people % 2 == 0:
-     half = people // 2
-else:
-     half = (people + 1) // 2
-print(half)
 
-# Task 2.4
-NUM1 = int(input("Enter a number: "))
-Result = NUM1 << 1
-if Result == 0:
-     print("The result of << is zero. Please enter a different number.")
-else:
-     print("The result of << is", Result)
+# #task 2.3
+# people = int(input("The population number: "))
+# if people % 2 == 0:
+#      half = people // 2
+# else:
+#      half = (people + 1) // 2
+# print(half)
 
-#Task 2.5
-try:
-    num1 = float(input("Please enter the first number: "))
-    num2 = float(input("Please enter the second number: "))
-    operation = input("Please choose the operation (+, -, *, /): ")
+# # Task 2.4
+# NUM1 = int(input("Enter a number: "))
+# Result = NUM1 << 1
+# if Result == 0:
+#      print("The result of << is zero. Please enter a different number.")
+# else:
+#      print("The result of << is", Result)
 
-    if operation == '+':
-        result = num1 + num2
-    elif operation == '-':
-        result = num1 - num2
-    elif operation == '*':
-        result = num1 * num2
-    elif operation == '/':
-        if num2 != 0:
-            result = num1 / num2
-        else:
-            raise ZeroDivisionError("Division by zero is not allowed.")
-    else:
-        raise ValueError("Invalid operation entered.")
+# #Task 2.5
+# try:
+#     num1 = float(input("Please enter the first number: "))
+#     num2 = float(input("Please enter the second number: "))
+#     operation = input("Please choose the operation (+, -, *, /): ")
 
-    print(f"{num1} {operation} {num2} = {result:.3f}")
+#     if operation == '+':
+#         result = num1 + num2
+#     elif operation == '-':
+#         result = num1 - num2
+#     elif operation == '*':
+#         result = num1 * num2
+#     elif operation == '/':
+#         if num2 != 0:
+#             result = num1 / num2
+#         else:
+#             raise ZeroDivisionError("Division by zero is not allowed.")
+#     else:
+#         raise ValueError("Invalid operation entered.")
 
-except ValueError as ve:
-    print(f"Error: {ve}")
-except ZeroDivisionError as zde:
-    print(f"Error: {zde}")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+#     print(f"{num1} {operation} {num2} = {result:.3f}")
 
-
-
-
-
+# except ValueError as ve:
+#     print(f"Error: {ve}")
+# except ZeroDivisionError as zde:
+#     print(f"Error: {zde}")
+# except Exception as e:
+#     print(f"An unexpected error occurred: {e}")
